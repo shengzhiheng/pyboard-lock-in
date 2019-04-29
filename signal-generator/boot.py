@@ -32,7 +32,7 @@ switchvalue = pyb.Switch()()
 if (switchvalue or lcd.is_touched()): 
 #usb mode of storage device 
 pyb.usb_mode('CDC+MSC') 
-pyb.main('cardreader.py') 
+pyb.main('card-reader.py') 
 #cardreader.py can be empty 
 lcd.erase() 
 lcd.set_pos(0,0) 
@@ -40,5 +40,5 @@ lcd.write('Cardreader mode')
 else: 
 #in this mode, files will not be visible in windows 
 pyb.usb_mode('CDC+HID') 
-pyb.main('signalgenerator.py') 
+pyb.main('signal-generator.py') 
 red.off() 
