@@ -35,7 +35,7 @@ switchvalue = pyb.Switch()()
 #leave unpressed to collect data
 #this way the data file will not be affected by windows
 if (switchvalue or lcd.is_touched()):
-#usb mode of storage device
+    #usb mode of storage device
 pyb.usb_mode('CDC+MSC')
 pyb.main('card-reader.py')
 #cardreader.py can be empty
@@ -43,7 +43,7 @@ lcd.erase()
 lcd.set_pos(0,0)
 lcd.write('Cardreader mode')
 else:
-#in this mode, files will not be visible in windows
+    #in this mode, files will not be visible in windows
 pyb.usb_mode('CDC+HID')
 pyb.main('data-logger.py')
 
