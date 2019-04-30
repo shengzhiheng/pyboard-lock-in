@@ -44,6 +44,6 @@ if (sw or lcd.is_touched()):
 else:
     # in this mode, files will not be visible in windows
     pyb.usb_mode('CDC+HID')
-    pyb.main('data-logger.py')
+    pyb.main('lock-in-amplifier.py')
 
 red.off()
