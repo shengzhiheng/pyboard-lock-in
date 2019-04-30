@@ -1,4 +1,5 @@
-# main.py the main program 
+# signal-generator.py
+
 log = open('/sd/random.csv','w') 
 log.write('Signal,Noise,Combined\n') 
 
@@ -14,7 +15,6 @@ for i in range(len(buf)):
 r = random.random() 
 buf[i] = int(1800*(signal+noise) + (ref[i]-1800) * signal + (r-0.5) * 3599 * noise) 
 log.write('{},{},{}\n'.format(ref[i]*signal/3600,r*noise,buf[i]/3600)) 
-
 log.close() 
 
 f = 1000 
