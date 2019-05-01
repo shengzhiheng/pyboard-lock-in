@@ -1,8 +1,5 @@
 # signal-generator.py
 
-log = open('/sd/random.csv','w') 
-log.write('Signal,Noise,Combined\n') 
-
 # create a buffer containing a sine-wave, using half-word samples 
 # upper limit set to 1800 to avoid saturation on the DAC pin 
 ref = array.array('H', 1800 + int(1799 * math.sin(2 * math.pi * i / 128)) for i in range(128)) 
@@ -12,10 +9,8 @@ buf = array.array('H', 0 for i in range(128))
 signal = 0 
 noise = 1 
 for i in range(len(buf)): 
-r = random.random() 
-buf[i] = int(1800*(signal+noise) + (ref[i]-1800) * signal + (r-0.5) * 3599 * noise) 
-log.write('{},{},{}\n'.format(ref[i]*signal/3600,r*noise,buf[i]/3600)) 
-log.close() 
+    r = random.random() 
+    buf[i] = int(1800*(signal+noise) + (ref[i]-1800) * signal + (r-0.5) * 3599 * noise) 
 
 f = 1000 
 # DAC 2 means pin X6 
