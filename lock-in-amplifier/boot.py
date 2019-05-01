@@ -5,7 +5,7 @@ import machine, pyb, array, math, lcd160cr
 
 # define X3 as ADC pin
 # refer to PyBoard documantation for other available pins
-adc = pyb.ADC(machine.Pin('X3', Pin.IN))
+adc = pyb.ADC(machine.Pin('X3', machine.Pin.IN))
 lcd = lcd160cr.LCD160CR('X')
 
 # define the on-board LEDs
