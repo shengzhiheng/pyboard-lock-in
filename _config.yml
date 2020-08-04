@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+title: PyBoard Lock-In Amplifier
+github:
+  repository_url: https:/github.com/shengzhiheng/pyboard-lock-in

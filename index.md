@@ -1,37 +1,5 @@
-## Welcome to GitHub Pages
+# PyBoard Lock-In Amplifier
 
-You can use the [editor on GitHub](https://github.com/shengzhiheng/pyboard-lock-in/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The **PyBoard Lock-In Amplifier** (LIA) is a very low-cost, easy was to implement digital lock-in amplifier using a microcontroller called PyBoard. This originated from a summer physics project at Grinnell College to survey lakes for the 3D distribution of algae underwater. The source code for the PyBoard LIA can be accessed from the header link or at [https://github.com/shengzhiheng/pyboard-lock-in](https://github.com/shengzhiheng/pyboard-lock-in).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shengzhiheng/pyboard-lock-in/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you are not familiar, a [lock-in amplifier](https://en.wikipedia.org/wiki/Lock-in_amplifier) is good at extracting a small signal from a relatively high background noise. The signal can be resolved from a noise a few thousand to even a million times stronger in some cases. This makes the LIA very powerful in detecting signals from a naturally noisy environment. 
